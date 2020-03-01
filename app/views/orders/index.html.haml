@@ -25,9 +25,7 @@
         = radio_button_tag 'payment-selection', 'stripe', true, onclick: "changeTab();"
         %span Stripe
       %br
-      %div
-        = radio_button_tag 'payment-selection', 'paypal', false, onclick: "changeTab();"
-        %span Paypal
+
     %br
     %br
     %div{id:'tab-stripe', class:'paymentSelectionTab active'}
@@ -36,8 +34,8 @@
       %br
       %br
       = submit_tag "Buy it!", id: "submit-stripe"
-    %div{id:'tab-paypal', class:'paymentSelectionTab'}
-      %div{id: "submit-paypal"}
+    %div{id:'tab-competitor', class:'paymentSelectionTab'}
+      %div{id: "submit-competitor"}
     %br
     %br
     %hr
@@ -95,7 +93,7 @@
       return false;
     });
   }());
-  //YOUR PAYPAL CODE WILL BE HERE
+  //YOUR competitor CODE WILL BE HERE
 
 :css
   #card-element {
